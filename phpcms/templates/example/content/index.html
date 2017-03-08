@@ -1,0 +1,120 @@
+<!--包含模板-->
+        {template "content","header"}
+
+<?php
+    echo "phpcms模板支持原生态PHP写法，但不推荐使用，尽量不用";
+?>
+
+        <!--常量-->
+{CSS_PATH}<br>
+{JS_PATH}<br>
+{IMG_PATH}<br>
+
+<!--变量-->
+{$cyb}<br>
+<!--php 语句写法，相当于<?php....?>-->
+{php print_r($SEO)}
+{php print_r($SEO["site_title"])}<br>
+{php $num = 10}
+{$num}<br>
+{php echo "hahhahahahahah"}
+<!--{}可以直接调用几乎所有php函数，但尽量少用，可以使用phpcms自带的函数库-->
+{strtoupper("hello,i am cyb")}
+        <!--phpcms 有自带的函数库-->
+
+        <!--判断语句if-->
+        {if $num < 5}
+            正确<br>
+        {else if $num >20}
+            错误<br>
+        {else}
+            hahah
+        {/if}
+        <br>
+        {php print_r($cyb_arr)}
+        <!--循环语句loop-->
+        {loop $cyb_arr $k $v}
+            {$k}==========>>{$v}<br>
+        {/loop}
+
+<!--pc标签，phpcms自带标签
+    {pc:模块名 action="参数值" 参数名="参数值" 参数名="参数值" 参数名="参数值"}
+
+    {/pc}
+
+    要改变pc标签指向，可以到后台管理 --》风格--》页面--》可视化--》pc修改
+
+
+-->
+        <!--{pc:content action="category" catid="0"}
+            <pre>
+                {php print_r($data)}
+            </pre>
+        {/pc}-->
+
+        <!--{pc:content  action="lists" catid="11" order="updatetime DESC" num="6" cache="3600"}
+            <pre>
+                {php print_r($data)}
+            </pre>
+        {/pc}-->
+       <!-- <div>
+            {pc:content  action="lists" catid="11" order="updatetime DESC" num="6" cache="3600"}
+            <ul>
+                {loop $data $v}
+                <li><a href="{$v[url]}">{$v[title]}</a></li>
+                {/loop}
+            </ul>
+            {/pc}
+        </div>
+        <div>
+            {pc:content action="lists"}
+            {/pc}
+        </div>-->
+
+<!--
+    get标签：其他模块没法使用pc标签获取时，可以使用get标签获取数据，可以直接写sql代码
+
+-->
+
+<div>
+    {pc:get sql="select id,title,url from v9_news" num="10" cache="3600"}
+        <!--<ul>
+            {loop $data $v}
+            <li><a href="{$v[url]}">{$v[title]}</a></li>
+            {/loop}
+        </ul>-->
+        {print_r($data)}
+    {/pc}
+</div>
+
+
+<!--
+    碎片：不成形的、零散的区块度可以当成一个碎片，设置成碎片，就可以在不成整个模块的情况下在后台修改碎片中的内容
+    三步走：
+        1.模板中添加碎片标签：
+            {pc:block pos="碎片名称"}{/pc}
+        2. 到后台管理 --》风格--》页面--》可视化--》添加碎片
+
+        3.到后台管理 --》内容管理 --》碎片管理设置碎片
+
+-->
+<div>
+    {pc:block pos="logo"}{/pc}
+</div>
+<div>
+    {pc:block pos="header"}{/pc}
+</div>
+<div>
+    {pc:block pos="footer"}{/pc}
+</div>
+
+
+<!--包含模板
+    {template "模块名" "模板名"}：表示包含哪个模块下的某个模板
+
+-->
+{template "content","footer"}
+
+
+
+
