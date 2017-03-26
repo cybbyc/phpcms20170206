@@ -500,3 +500,11 @@
 <?php exit;?>02-23 00:50:25 | 2 | explode(): Empty delimiter     | phpcms\modules\collection\classes\collection.class.php | 244
 <?php exit;?>02-23 00:50:26 | 2 | explode(): Empty delimiter     | phpcms\modules\collection\classes\collection.class.php | 244
 <?php exit;?>02-23 00:56:33 | 2 | file_get_contents(http://www.gd.chinanews.com/2017/2017-01-21/2/379608.shtml):  | phpcms\modules\collection\classes\collection.class.php | 221
+<?php exit;?>03-26 01:10:01 | 2 | include(H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php): failed to open stream: No such file or directory | phpcms\modules\cyb\cyb.php | 13
+<?php exit;?>03-26 01:10:01 | 2 | include(): Failed opening 'H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php' for inclusion (include_path='.;C:\php\pear') | phpcms\modules\cyb\cyb.php | 13
+<?php exit;?>03-26 01:10:32 | 2 | include(H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php): failed to open stream: No such file or directory | phpcms\modules\cyb\cyb.php | 13
+<?php exit;?>03-26 01:10:32 | 2 | include(): Failed opening 'H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php' for inclusion (include_path='.;C:\php\pear') | phpcms\modules\cyb\cyb.php | 13
+<?php exit;?>03-26 01:11:28 | 2 | include(H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php): failed to open stream: No such file or directory | phpcms\modules\cyb\cyb.php | 13
+<?php exit;?>03-26 01:11:28 | 2 | include(): Failed opening 'H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php' for inclusion (include_path='.;C:\php\pear') | phpcms\modules\cyb\cyb.php | 13
+<?php exit;?>03-26 01:11:44 | 2 | include(H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php): failed to open stream: No such file or directory | phpcms\modules\cyb\cyb.php | 13
+<?php exit;?>03-26 01:11:44 | 2 | include(): Failed opening 'H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php' for inclusion (include_path='.;C:\php\pear') | phpcms\modules\cyb\cyb.php | 13

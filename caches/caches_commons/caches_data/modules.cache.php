@@ -351,5 +351,19 @@ return array (
     'installdate' => '2017-02-22',
     'updatedate' => '2017-02-22',
   ),
+  'cyb' => 
+  array (
+    'module' => 'cyb',
+    'name' => 'cyb自定义',
+    'url' => '',
+    'iscore' => '1',
+    'version' => '1.0',
+    'description' => '',
+    'setting' => '',
+    'listorder' => '0',
+    'disabled' => '0',
+    'installdate' => '2017-03-25',
+    'updatedate' => '2017-03-25',
+  ),
 );
 ?>

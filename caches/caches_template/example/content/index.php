@@ -1,19 +1,9 @@
 <?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><!--包含模板-->
         <?php include template("content","header"); ?>
 
-
-
 <?php
     echo "phpcms模板支持原生态PHP写法，但不推荐使用，尽量不用";
 ?>
-
-
-
-<h1>这是cyb_example模板首页</h1>
-<br>
-内容阿斯顿法国秦淮区内容阿斯顿法国秦淮区<br>
-内容阿斯顿法国秦淮区<br>
-内容阿斯顿法国秦淮区内容阿斯顿法国秦淮区内容阿斯顿法国秦淮区<br>
 
         <!--常量-->
 <?php echo CSS_PATH;?><br>
@@ -31,7 +21,6 @@
 <!--{}可以直接调用几乎所有php函数，但尽量少用，可以使用phpcms自带的函数库-->
 <?php echo strtoupper("hello,i am cyb");?>
         <!--phpcms 有自带的函数库-->
-
 
         <!--判断语句if-->
         <?php if($num < 5) { ?>
@@ -119,8 +108,12 @@
     <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"block\" data=\"op=block&tag_md5=2dd64172cf5f13c11853e2dfc09218ce&pos=footer\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">添加碎片</a>";}$block_tag = pc_base::load_app_class('block_tag', 'block');echo $block_tag->pc_tag(array('pos'=>'footer',));?><?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
 </div>
 
+<pre>
+   包含模板
+    \{ template "模块名" "模板名" \}：表示包含哪个模块下的某个模板
 
-<!--包含模板-->
+</pre>
+
 <?php include template("content","footer"); ?>
 
 

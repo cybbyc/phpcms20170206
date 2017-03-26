@@ -455,4 +455,11 @@ $LANG['complete_info'] = '填写资料';
 $LANG['clear_data'] = '一键清理';
 $LANG['player_manage'] = '播放器管理';
 $LANG['video_upload'] = '视频上传'; 
+$LANG['cyb'] = 'cyb自定义';
+$LANG['add'] = '添加';
+$LANG['cyb'] = 'cyb自定义';
+$LANG['add'] = '添加';
+$LANG['add'] = '添加';
+$LANG['update'] = '修改';
+$LANG['delete'] = '删除';
 ?>

@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-03-08 23:56:00
+Date: 2017-03-26 23:43:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -38,7 +38,7 @@ CREATE TABLE `v9_admin` (
 -- ----------------------------
 -- Records of v9_admin
 -- ----------------------------
-INSERT INTO `v9_admin` VALUES ('1', 'phpcms', '3a7bebf2a28bad1567f68bd18fe88eb7', '1', 'AcLPrT', '', '1488982739', 'cyb@qq.com', '', '', '');
+INSERT INTO `v9_admin` VALUES ('1', 'phpcms', '3a7bebf2a28bad1567f68bd18fe88eb7', '1', 'AcLPrT', '', '1490538508', 'cyb@qq.com', '', '', '');
 INSERT INTO `v9_admin` VALUES ('2', 'cyb', '4dae8fe44d96aff2eb9f60ea38414f1b', '2', 'nmCa8G', null, '0', 'abc@qq.com', '兵', '', '');
 
 -- ----------------------------
@@ -209,7 +209,7 @@ CREATE TABLE `v9_badword` (
   UNIQUE KEY `badword` (`badword`),
   KEY `usetimes` (`replaceword`,`listorder`),
   KEY `hits` (`listorder`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of v9_badword
@@ -310,7 +310,7 @@ INSERT INTO `v9_cache` VALUES ('role_siteid.cache.php', 'caches_commons/caches_d
 INSERT INTO `v9_cache` VALUES ('role.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  1 => \'超级管理员\',\n  2 => \'站点管理员\',\n  3 => \'运营总监\',\n  4 => \'总编\',\n  5 => \'编辑\',\n  7 => \'发布人员\',\n  8 => \'小兵\',\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('urlrules_detail.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  1 => \n  array (\n    \'urlruleid\' => \'1\',\n    \'module\' => \'content\',\n    \'file\' => \'category\',\n    \'ishtml\' => \'1\',\n    \'urlrule\' => \'{$categorydir}{$catdir}/index.html|{$categorydir}{$catdir}/{$page}.html\',\n    \'example\' => \'news/china/1000.html\',\n  ),\n  6 => \n  array (\n    \'urlruleid\' => \'6\',\n    \'module\' => \'content\',\n    \'file\' => \'category\',\n    \'ishtml\' => \'0\',\n    \'urlrule\' => \'index.php?m=content&c=index&a=lists&catid={$catid}|index.php?m=content&c=index&a=lists&catid={$catid}&page={$page}\',\n    \'example\' => \'index.php?m=content&c=index&a=lists&catid=1&page=1\',\n  ),\n  11 => \n  array (\n    \'urlruleid\' => \'11\',\n    \'module\' => \'content\',\n    \'file\' => \'show\',\n    \'ishtml\' => \'1\',\n    \'urlrule\' => \'{$year}/{$catdir}_{$month}{$day}/{$id}.html|{$year}/{$catdir}_{$month}{$day}/{$id}_{$page}.html\',\n    \'example\' => \'2010/catdir_0720/1_2.html\',\n  ),\n  12 => \n  array (\n    \'urlruleid\' => \'12\',\n    \'module\' => \'content\',\n    \'file\' => \'show\',\n    \'ishtml\' => \'1\',\n    \'urlrule\' => \'{$categorydir}{$catdir}/{$year}/{$month}{$day}/{$id}.html|{$categorydir}{$catdir}/{$year}/{$month}{$day}/{$id}_{$page}.html\',\n    \'example\' => \'it/product/2010/0720/1_2.html\',\n  ),\n  16 => \n  array (\n    \'urlruleid\' => \'16\',\n    \'module\' => \'content\',\n    \'file\' => \'show\',\n    \'ishtml\' => \'0\',\n    \'urlrule\' => \'index.php?m=content&c=index&a=show&catid={$catid}&id={$id}|index.php?m=content&c=index&a=show&catid={$catid}&id={$id}&page={$page}\',\n    \'example\' => \'index.php?m=content&c=index&a=show&catid=1&id=1\',\n  ),\n  17 => \n  array (\n    \'urlruleid\' => \'17\',\n    \'module\' => \'content\',\n    \'file\' => \'show\',\n    \'ishtml\' => \'0\',\n    \'urlrule\' => \'show-{$catid}-{$id}-{$page}.html\',\n    \'example\' => \'show-1-2-1.html\',\n  ),\n  18 => \n  array (\n    \'urlruleid\' => \'18\',\n    \'module\' => \'content\',\n    \'file\' => \'show\',\n    \'ishtml\' => \'0\',\n    \'urlrule\' => \'content-{$catid}-{$id}-{$page}.html\',\n    \'example\' => \'content-1-2-1.html\',\n  ),\n  30 => \n  array (\n    \'urlruleid\' => \'30\',\n    \'module\' => \'content\',\n    \'file\' => \'category\',\n    \'ishtml\' => \'0\',\n    \'urlrule\' => \'list-{$catid}-{$page}.html\',\n    \'example\' => \'list-1-1.html\',\n  ),\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('urlrules.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  1 => \'{$categorydir}{$catdir}/index.html|{$categorydir}{$catdir}/{$page}.html\',\n  6 => \'index.php?m=content&c=index&a=lists&catid={$catid}|index.php?m=content&c=index&a=lists&catid={$catid}&page={$page}\',\n  11 => \'{$year}/{$catdir}_{$month}{$day}/{$id}.html|{$year}/{$catdir}_{$month}{$day}/{$id}_{$page}.html\',\n  12 => \'{$categorydir}{$catdir}/{$year}/{$month}{$day}/{$id}.html|{$categorydir}{$catdir}/{$year}/{$month}{$day}/{$id}_{$page}.html\',\n  16 => \'index.php?m=content&c=index&a=show&catid={$catid}&id={$id}|index.php?m=content&c=index&a=show&catid={$catid}&id={$id}&page={$page}\',\n  17 => \'show-{$catid}-{$id}-{$page}.html\',\n  18 => \'content-{$catid}-{$id}-{$page}.html\',\n  30 => \'list-{$catid}-{$page}.html\',\n);\n?>');
-INSERT INTO `v9_cache` VALUES ('modules.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  \'admin\' => \n  array (\n    \'module\' => \'admin\',\n    \'name\' => \'admin\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'array (\n  \\\'admin_email\\\' => \\\'phpcms@phpcms.cn\\\',\n  \\\'adminaccessip\\\' => \\\'0\\\',\n  \\\'maxloginfailedtimes\\\' => \\\'8\\\',\n  \\\'maxiplockedtime\\\' => \\\'15\\\',\n  \\\'minrefreshtime\\\' => \\\'2\\\',\n  \\\'mail_type\\\' => \\\'1\\\',\n  \\\'mail_server\\\' => \\\'smtp.qq.com\\\',\n  \\\'mail_port\\\' => \\\'25\\\',\n  \\\'mail_user\\\' => \\\'phpcms.cn@foxmail.com\\\',\n  \\\'mail_auth\\\' => \\\'1\\\',\n  \\\'mail_from\\\' => \\\'phpcms.cn@foxmail.com\\\',\n  \\\'mail_password\\\' => \\\'\\\',\n  \\\'errorlog_size\\\' => \\\'20\\\',\n)\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-10-18\',\n    \'updatedate\' => \'2010-10-18\',\n  ),\n  \'member\' => \n  array (\n    \'module\' => \'member\',\n    \'name\' => \'会员\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'array (\n  \\\'allowregister\\\' => \\\'1\\\',\n  \\\'choosemodel\\\' => \\\'1\\\',\n  \\\'enablemailcheck\\\' => \\\'0\\\',\n  \\\'registerverify\\\' => \\\'0\\\',\n  \\\'showapppoint\\\' => \\\'0\\\',\n  \\\'rmb_point_rate\\\' => \\\'10\\\',\n  \\\'defualtpoint\\\' => \\\'0\\\',\n  \\\'defualtamount\\\' => \\\'0\\\',\n  \\\'showregprotocol\\\' => \\\'0\\\',\n  \\\'regprotocol\\\' => \\\'		 欢迎您注册成为phpcms用户\r\n请仔细阅读下面的协议，只有接受协议才能继续进行注册。 \r\n1．服务条款的确认和接纳\r\n　　phpcms用户服务的所有权和运作权归phpcms拥有。phpcms所提供的服务将按照有关章程、服务条款和操作规则严格执行。用户通过注册程序点击“我同意” 按钮，即表示用户与phpcms达成协议并接受所有的服务条款。\r\n2． phpcms服务简介\r\n　　phpcms通过国际互联网为用户提供新闻及文章浏览、图片浏览、软件下载、网上留言和BBS论坛等服务。\r\n　　用户必须： \r\n　　1)购置设备，包括个人电脑一台、调制解调器一个及配备上网装置。 \r\n　　2)个人上网和支付与此服务有关的电话费用、网络费用。\r\n　　用户同意： \r\n　　1)提供及时、详尽及准确的个人资料。 \r\n　　2)不断更新注册资料，符合及时、详尽、准确的要求。所有原始键入的资料将引用为注册资料。 \r\n　　3)用户同意遵守《中华人民共和国保守国家秘密法》、《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》等有关计算机及互联网规定的法律和法规、实施办法。在任何情况下，phpcms合理地认为用户的行为可能违反上述法律、法规，phpcms可以在任何时候，不经事先通知终止向该用户提供服务。用户应了解国际互联网的无国界性，应特别注意遵守当地所有有关的法律和法规。\r\n3． 服务条款的修改\r\n　　phpcms会不定时地修改服务条款，服务条款一旦发生变动，将会在相关页面上提示修改内容。如果您同意改动，则再一次点击“我同意”按钮。 如果您不接受，则及时取消您的用户使用服务资格。\r\n4． 服务修订\r\n　　phpcms保留随时修改或中断服务而不需知照用户的权利。phpcms行使修改或中断服务的权利，不需对用户或第三方负责。\r\n5． 用户隐私制度\r\n　　尊重用户个人隐私是phpcms的 基本政策。phpcms不会公开、编辑或透露用户的注册信息，除非有法律许可要求，或phpcms在诚信的基础上认为透露这些信息在以下三种情况是必要的： \r\n　　1)遵守有关法律规定，遵从合法服务程序。 \r\n　　2)保持维护phpcms的商标所有权。 \r\n　　3)在紧急情况下竭力维护用户个人和社会大众的隐私安全。 \r\n　　4)符合其他相关的要求。 \r\n6．用户的帐号，密码和安全性\r\n　　一旦注册成功成为phpcms用户，您将得到一个密码和帐号。如果您不保管好自己的帐号和密码安全，将对因此产生的后果负全部责任。另外，每个用户都要对其帐户中的所有活动和事件负全责。您可随时根据指示改变您的密码，也可以结束旧的帐户重开一个新帐户。用户同意若发现任何非法使用用户帐号或安全漏洞的情况，立即通知phpcms。\r\n7． 免责条款\r\n　　用户明确同意网站服务的使用由用户个人承担风险。 　　 \r\n　　phpcms不作任何类型的担保，不担保服务一定能满足用户的要求，也不担保服务不会受中断，对服务的及时性，安全性，出错发生都不作担保。用户理解并接受：任何通过phpcms服务取得的信息资料的可靠性取决于用户自己，用户自己承担所有风险和责任。 \r\n8．有限责任\r\n　　phpcms对任何直接、间接、偶然、特殊及继起的损害不负责任。\r\n9． 不提供零售和商业性服务 \r\n　　用户使用网站服务的权利是个人的。用户只能是一个单独的个体而不能是一个公司或实体商业性组织。用户承诺不经phpcms同意，不能利用网站服务进行销售或其他商业用途。\r\n10．用户责任 \r\n　　用户单独承担传输内容的责任。用户必须遵循： \r\n　　1)从中国境内向外传输技术性资料时必须符合中国有关法规。 \r\n　　2)使用网站服务不作非法用途。 \r\n　　3)不干扰或混乱网络服务。 \r\n　　4)不在论坛BBS或留言簿发表任何与政治相关的信息。 \r\n　　5)遵守所有使用网站服务的网络协议、规定、程序和惯例。\r\n　　6)不得利用本站危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益。\r\n　　7)不得利用本站制作、复制和传播下列信息： \r\n　　　1、煽动抗拒、破坏宪法和法律、行政法规实施的；\r\n　　　2、煽动颠覆国家政权，推翻社会主义制度的；\r\n　　　3、煽动分裂国家、破坏国家统一的；\r\n　　　4、煽动民族仇恨、民族歧视，破坏民族团结的；\r\n　　　5、捏造或者歪曲事实，散布谣言，扰乱社会秩序的；\r\n　　　6、宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的；\r\n　　　7、公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的；\r\n　　　8、损害国家机关信誉的；\r\n　　　9、其他违反宪法和法律行政法规的；\r\n　　　10、进行商业广告行为的。\r\n　　用户不能传输任何教唆他人构成犯罪行为的资料；不能传输长国内不利条件和涉及国家安全的资料；不能传输任何不符合当地法规、国家法律和国际法 律的资料。未经许可而非法进入其它电脑系统是禁止的。若用户的行为不符合以上的条款，phpcms将取消用户服务帐号。\r\n11．网站内容的所有权\r\n　　phpcms定义的内容包括：文字、软件、声音、相片、录象、图表；在广告中全部内容；电子邮件的全部内容；phpcms为用户提供的商业信息。所有这些内容受版权、商标、标签和其它财产所有权法律的保护。所以，用户只能在phpcms和广告商授权下才能使用这些内容，而不能擅自复制、篡改这些内容、或创造与内容有关的派生产品。\r\n12．附加信息服务\r\n　　用户在享用phpcms提供的免费服务的同时，同意接受phpcms提供的各类附加信息服务。\r\n13．解释权\r\n　　本注册协议的解释权归phpcms所有。如果其中有任何条款与国家的有关法律相抵触，则以国家法律的明文规定为准。 \\\',\n  \\\'registerverifymessage\\\' => \\\' 欢迎您注册成为phpcms用户，您的账号需要邮箱认证，点击下面链接进行认证：{click}\r\n或者将网址复制到浏览器：{url}\\\',\n  \\\'forgetpassword\\\' => \\\' phpcms密码找回，请在一小时内点击下面链接进行操作：{click}\r\n或者将网址复制到浏览器：{url}\\\',\n)\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'pay\' => \n  array (\n    \'module\' => \'pay\',\n    \'name\' => \'支付\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'digg\' => \n  array (\n    \'module\' => \'digg\',\n    \'name\' => \'顶一下\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'special\' => \n  array (\n    \'module\' => \'special\',\n    \'name\' => \'专题\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'content\' => \n  array (\n    \'module\' => \'content\',\n    \'name\' => \'内容模块\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'search\' => \n  array (\n    \'module\' => \'search\',\n    \'name\' => \'全站搜索\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'array (\n  \\\'fulltextenble\\\' => \\\'1\\\',\n  \\\'relationenble\\\' => \\\'1\\\',\n  \\\'suggestenable\\\' => \\\'1\\\',\n  \\\'sphinxenable\\\' => \\\'0\\\',\n  \\\'sphinxhost\\\' => \\\'10.228.134.102\\\',\n  \\\'sphinxport\\\' => \\\'9312\\\',\n)\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'scan\' => \n  array (\n    \'module\' => \'scan\',\n    \'name\' => \'木马扫描\',\n    \'url\' => \'scan\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'attachment\' => \n  array (\n    \'module\' => \'attachment\',\n    \'name\' => \'附件\',\n    \'url\' => \'attachment\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'block\' => \n  array (\n    \'module\' => \'block\',\n    \'name\' => \'碎片\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'collection\' => \n  array (\n    \'module\' => \'collection\',\n    \'name\' => \'采集模块\',\n    \'url\' => \'collection\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'dbsource\' => \n  array (\n    \'module\' => \'dbsource\',\n    \'name\' => \'数据源\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'template\' => \n  array (\n    \'module\' => \'template\',\n    \'name\' => \'模板风格\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'release\' => \n  array (\n    \'module\' => \'release\',\n    \'name\' => \'发布点\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'video\' => \n  array (\n    \'module\' => \'video\',\n    \'name\' => \'视频库\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2012-09-28\',\n    \'updatedate\' => \'2012-09-28\',\n  ),\n  \'link\' => \n  array (\n    \'module\' => \'link\',\n    \'name\' => \'友情链接\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'array (\n  1 => \n  array (\n    \\\'is_post\\\' => \\\'1\\\',\n    \\\'enablecheckcode\\\' => \\\'0\\\',\n  ),\n)\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'announce\' => \n  array (\n    \'module\' => \'announce\',\n    \'name\' => \'公告\',\n    \'url\' => \'announce/\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'公告\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2017-02-22\',\n    \'updatedate\' => \'2017-02-22\',\n  ),\n  \'poster\' => \n  array (\n    \'module\' => \'poster\',\n    \'name\' => \'广告模块\',\n    \'url\' => \'poster/\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'广告模块\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2017-02-22\',\n    \'updatedate\' => \'2017-02-22\',\n  ),\n);\n?>');
+INSERT INTO `v9_cache` VALUES ('modules.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  \'admin\' => \n  array (\n    \'module\' => \'admin\',\n    \'name\' => \'admin\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'array (\n  \\\'admin_email\\\' => \\\'phpcms@phpcms.cn\\\',\n  \\\'adminaccessip\\\' => \\\'0\\\',\n  \\\'maxloginfailedtimes\\\' => \\\'8\\\',\n  \\\'maxiplockedtime\\\' => \\\'15\\\',\n  \\\'minrefreshtime\\\' => \\\'2\\\',\n  \\\'mail_type\\\' => \\\'1\\\',\n  \\\'mail_server\\\' => \\\'smtp.qq.com\\\',\n  \\\'mail_port\\\' => \\\'25\\\',\n  \\\'mail_user\\\' => \\\'phpcms.cn@foxmail.com\\\',\n  \\\'mail_auth\\\' => \\\'1\\\',\n  \\\'mail_from\\\' => \\\'phpcms.cn@foxmail.com\\\',\n  \\\'mail_password\\\' => \\\'\\\',\n  \\\'errorlog_size\\\' => \\\'20\\\',\n)\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-10-18\',\n    \'updatedate\' => \'2010-10-18\',\n  ),\n  \'member\' => \n  array (\n    \'module\' => \'member\',\n    \'name\' => \'会员\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'array (\n  \\\'allowregister\\\' => \\\'1\\\',\n  \\\'choosemodel\\\' => \\\'1\\\',\n  \\\'enablemailcheck\\\' => \\\'0\\\',\n  \\\'registerverify\\\' => \\\'0\\\',\n  \\\'showapppoint\\\' => \\\'0\\\',\n  \\\'rmb_point_rate\\\' => \\\'10\\\',\n  \\\'defualtpoint\\\' => \\\'0\\\',\n  \\\'defualtamount\\\' => \\\'0\\\',\n  \\\'showregprotocol\\\' => \\\'0\\\',\n  \\\'regprotocol\\\' => \\\'		 欢迎您注册成为phpcms用户\r\n请仔细阅读下面的协议，只有接受协议才能继续进行注册。 \r\n1．服务条款的确认和接纳\r\n　　phpcms用户服务的所有权和运作权归phpcms拥有。phpcms所提供的服务将按照有关章程、服务条款和操作规则严格执行。用户通过注册程序点击“我同意” 按钮，即表示用户与phpcms达成协议并接受所有的服务条款。\r\n2． phpcms服务简介\r\n　　phpcms通过国际互联网为用户提供新闻及文章浏览、图片浏览、软件下载、网上留言和BBS论坛等服务。\r\n　　用户必须： \r\n　　1)购置设备，包括个人电脑一台、调制解调器一个及配备上网装置。 \r\n　　2)个人上网和支付与此服务有关的电话费用、网络费用。\r\n　　用户同意： \r\n　　1)提供及时、详尽及准确的个人资料。 \r\n　　2)不断更新注册资料，符合及时、详尽、准确的要求。所有原始键入的资料将引用为注册资料。 \r\n　　3)用户同意遵守《中华人民共和国保守国家秘密法》、《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》等有关计算机及互联网规定的法律和法规、实施办法。在任何情况下，phpcms合理地认为用户的行为可能违反上述法律、法规，phpcms可以在任何时候，不经事先通知终止向该用户提供服务。用户应了解国际互联网的无国界性，应特别注意遵守当地所有有关的法律和法规。\r\n3． 服务条款的修改\r\n　　phpcms会不定时地修改服务条款，服务条款一旦发生变动，将会在相关页面上提示修改内容。如果您同意改动，则再一次点击“我同意”按钮。 如果您不接受，则及时取消您的用户使用服务资格。\r\n4． 服务修订\r\n　　phpcms保留随时修改或中断服务而不需知照用户的权利。phpcms行使修改或中断服务的权利，不需对用户或第三方负责。\r\n5． 用户隐私制度\r\n　　尊重用户个人隐私是phpcms的 基本政策。phpcms不会公开、编辑或透露用户的注册信息，除非有法律许可要求，或phpcms在诚信的基础上认为透露这些信息在以下三种情况是必要的： \r\n　　1)遵守有关法律规定，遵从合法服务程序。 \r\n　　2)保持维护phpcms的商标所有权。 \r\n　　3)在紧急情况下竭力维护用户个人和社会大众的隐私安全。 \r\n　　4)符合其他相关的要求。 \r\n6．用户的帐号，密码和安全性\r\n　　一旦注册成功成为phpcms用户，您将得到一个密码和帐号。如果您不保管好自己的帐号和密码安全，将对因此产生的后果负全部责任。另外，每个用户都要对其帐户中的所有活动和事件负全责。您可随时根据指示改变您的密码，也可以结束旧的帐户重开一个新帐户。用户同意若发现任何非法使用用户帐号或安全漏洞的情况，立即通知phpcms。\r\n7． 免责条款\r\n　　用户明确同意网站服务的使用由用户个人承担风险。 　　 \r\n　　phpcms不作任何类型的担保，不担保服务一定能满足用户的要求，也不担保服务不会受中断，对服务的及时性，安全性，出错发生都不作担保。用户理解并接受：任何通过phpcms服务取得的信息资料的可靠性取决于用户自己，用户自己承担所有风险和责任。 \r\n8．有限责任\r\n　　phpcms对任何直接、间接、偶然、特殊及继起的损害不负责任。\r\n9． 不提供零售和商业性服务 \r\n　　用户使用网站服务的权利是个人的。用户只能是一个单独的个体而不能是一个公司或实体商业性组织。用户承诺不经phpcms同意，不能利用网站服务进行销售或其他商业用途。\r\n10．用户责任 \r\n　　用户单独承担传输内容的责任。用户必须遵循： \r\n　　1)从中国境内向外传输技术性资料时必须符合中国有关法规。 \r\n　　2)使用网站服务不作非法用途。 \r\n　　3)不干扰或混乱网络服务。 \r\n　　4)不在论坛BBS或留言簿发表任何与政治相关的信息。 \r\n　　5)遵守所有使用网站服务的网络协议、规定、程序和惯例。\r\n　　6)不得利用本站危害国家安全、泄露国家秘密，不得侵犯国家社会集体的和公民的合法权益。\r\n　　7)不得利用本站制作、复制和传播下列信息： \r\n　　　1、煽动抗拒、破坏宪法和法律、行政法规实施的；\r\n　　　2、煽动颠覆国家政权，推翻社会主义制度的；\r\n　　　3、煽动分裂国家、破坏国家统一的；\r\n　　　4、煽动民族仇恨、民族歧视，破坏民族团结的；\r\n　　　5、捏造或者歪曲事实，散布谣言，扰乱社会秩序的；\r\n　　　6、宣扬封建迷信、淫秽、色情、赌博、暴力、凶杀、恐怖、教唆犯罪的；\r\n　　　7、公然侮辱他人或者捏造事实诽谤他人的，或者进行其他恶意攻击的；\r\n　　　8、损害国家机关信誉的；\r\n　　　9、其他违反宪法和法律行政法规的；\r\n　　　10、进行商业广告行为的。\r\n　　用户不能传输任何教唆他人构成犯罪行为的资料；不能传输长国内不利条件和涉及国家安全的资料；不能传输任何不符合当地法规、国家法律和国际法 律的资料。未经许可而非法进入其它电脑系统是禁止的。若用户的行为不符合以上的条款，phpcms将取消用户服务帐号。\r\n11．网站内容的所有权\r\n　　phpcms定义的内容包括：文字、软件、声音、相片、录象、图表；在广告中全部内容；电子邮件的全部内容；phpcms为用户提供的商业信息。所有这些内容受版权、商标、标签和其它财产所有权法律的保护。所以，用户只能在phpcms和广告商授权下才能使用这些内容，而不能擅自复制、篡改这些内容、或创造与内容有关的派生产品。\r\n12．附加信息服务\r\n　　用户在享用phpcms提供的免费服务的同时，同意接受phpcms提供的各类附加信息服务。\r\n13．解释权\r\n　　本注册协议的解释权归phpcms所有。如果其中有任何条款与国家的有关法律相抵触，则以国家法律的明文规定为准。 \\\',\n  \\\'registerverifymessage\\\' => \\\' 欢迎您注册成为phpcms用户，您的账号需要邮箱认证，点击下面链接进行认证：{click}\r\n或者将网址复制到浏览器：{url}\\\',\n  \\\'forgetpassword\\\' => \\\' phpcms密码找回，请在一小时内点击下面链接进行操作：{click}\r\n或者将网址复制到浏览器：{url}\\\',\n)\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'pay\' => \n  array (\n    \'module\' => \'pay\',\n    \'name\' => \'支付\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'digg\' => \n  array (\n    \'module\' => \'digg\',\n    \'name\' => \'顶一下\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'special\' => \n  array (\n    \'module\' => \'special\',\n    \'name\' => \'专题\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'content\' => \n  array (\n    \'module\' => \'content\',\n    \'name\' => \'内容模块\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'search\' => \n  array (\n    \'module\' => \'search\',\n    \'name\' => \'全站搜索\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'array (\n  \\\'fulltextenble\\\' => \\\'1\\\',\n  \\\'relationenble\\\' => \\\'1\\\',\n  \\\'suggestenable\\\' => \\\'1\\\',\n  \\\'sphinxenable\\\' => \\\'0\\\',\n  \\\'sphinxhost\\\' => \\\'10.228.134.102\\\',\n  \\\'sphinxport\\\' => \\\'9312\\\',\n)\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'scan\' => \n  array (\n    \'module\' => \'scan\',\n    \'name\' => \'木马扫描\',\n    \'url\' => \'scan\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'attachment\' => \n  array (\n    \'module\' => \'attachment\',\n    \'name\' => \'附件\',\n    \'url\' => \'attachment\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'block\' => \n  array (\n    \'module\' => \'block\',\n    \'name\' => \'碎片\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'collection\' => \n  array (\n    \'module\' => \'collection\',\n    \'name\' => \'采集模块\',\n    \'url\' => \'collection\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'dbsource\' => \n  array (\n    \'module\' => \'dbsource\',\n    \'name\' => \'数据源\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'template\' => \n  array (\n    \'module\' => \'template\',\n    \'name\' => \'模板风格\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'release\' => \n  array (\n    \'module\' => \'release\',\n    \'name\' => \'发布点\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-01\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'video\' => \n  array (\n    \'module\' => \'video\',\n    \'name\' => \'视频库\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2012-09-28\',\n    \'updatedate\' => \'2012-09-28\',\n  ),\n  \'link\' => \n  array (\n    \'module\' => \'link\',\n    \'name\' => \'友情链接\',\n    \'url\' => \'\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'array (\n  1 => \n  array (\n    \\\'is_post\\\' => \\\'1\\\',\n    \\\'enablecheckcode\\\' => \\\'0\\\',\n  ),\n)\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2010-09-06\',\n    \'updatedate\' => \'2010-09-06\',\n  ),\n  \'announce\' => \n  array (\n    \'module\' => \'announce\',\n    \'name\' => \'公告\',\n    \'url\' => \'announce/\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'公告\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2017-02-22\',\n    \'updatedate\' => \'2017-02-22\',\n  ),\n  \'poster\' => \n  array (\n    \'module\' => \'poster\',\n    \'name\' => \'广告模块\',\n    \'url\' => \'poster/\',\n    \'iscore\' => \'0\',\n    \'version\' => \'1.0\',\n    \'description\' => \'广告模块\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2017-02-22\',\n    \'updatedate\' => \'2017-02-22\',\n  ),\n  \'cyb\' => \n  array (\n    \'module\' => \'cyb\',\n    \'name\' => \'cyb自定义\',\n    \'url\' => \'\',\n    \'iscore\' => \'1\',\n    \'version\' => \'1.0\',\n    \'description\' => \'\',\n    \'setting\' => \'\',\n    \'listorder\' => \'0\',\n    \'disabled\' => \'0\',\n    \'installdate\' => \'2017-03-25\',\n    \'updatedate\' => \'2017-03-25\',\n  ),\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('model.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  1 => \n  array (\n    \'modelid\' => \'1\',\n    \'siteid\' => \'1\',\n    \'name\' => \'文章模型\',\n    \'description\' => \'\',\n    \'tablename\' => \'news\',\n    \'setting\' => \'\',\n    \'addtime\' => \'0\',\n    \'items\' => \'0\',\n    \'enablesearch\' => \'1\',\n    \'disabled\' => \'0\',\n    \'default_style\' => \'default\',\n    \'category_template\' => \'category\',\n    \'list_template\' => \'list\',\n    \'show_template\' => \'show\',\n    \'js_template\' => \'\',\n    \'admin_list_template\' => \'\',\n    \'member_add_template\' => \'\',\n    \'member_list_template\' => \'\',\n    \'sort\' => \'0\',\n    \'type\' => \'0\',\n  ),\n  2 => \n  array (\n    \'modelid\' => \'2\',\n    \'siteid\' => \'1\',\n    \'name\' => \'下载模型\',\n    \'description\' => \'\',\n    \'tablename\' => \'download\',\n    \'setting\' => \'\',\n    \'addtime\' => \'0\',\n    \'items\' => \'0\',\n    \'enablesearch\' => \'1\',\n    \'disabled\' => \'0\',\n    \'default_style\' => \'default\',\n    \'category_template\' => \'category_download\',\n    \'list_template\' => \'list_download\',\n    \'show_template\' => \'show_download\',\n    \'js_template\' => \'\',\n    \'admin_list_template\' => \'\',\n    \'member_add_template\' => \'\',\n    \'member_list_template\' => \'\',\n    \'sort\' => \'0\',\n    \'type\' => \'0\',\n  ),\n  3 => \n  array (\n    \'modelid\' => \'3\',\n    \'siteid\' => \'1\',\n    \'name\' => \'图片模型\',\n    \'description\' => \'\',\n    \'tablename\' => \'picture\',\n    \'setting\' => \'\',\n    \'addtime\' => \'0\',\n    \'items\' => \'0\',\n    \'enablesearch\' => \'1\',\n    \'disabled\' => \'0\',\n    \'default_style\' => \'default\',\n    \'category_template\' => \'category_picture\',\n    \'list_template\' => \'list_picture\',\n    \'show_template\' => \'show_picture\',\n    \'js_template\' => \'\',\n    \'admin_list_template\' => \'\',\n    \'member_add_template\' => \'\',\n    \'member_list_template\' => \'\',\n    \'sort\' => \'0\',\n    \'type\' => \'0\',\n  ),\n  11 => \n  array (\n    \'modelid\' => \'11\',\n    \'siteid\' => \'1\',\n    \'name\' => \'视频模型\',\n    \'description\' => \'\',\n    \'tablename\' => \'video\',\n    \'setting\' => \'\',\n    \'addtime\' => \'0\',\n    \'items\' => \'0\',\n    \'enablesearch\' => \'1\',\n    \'disabled\' => \'0\',\n    \'default_style\' => \'default\',\n    \'category_template\' => \'category_video\',\n    \'list_template\' => \'list_video\',\n    \'show_template\' => \'show_video\',\n    \'js_template\' => \'\',\n    \'admin_list_template\' => \'\',\n    \'member_add_template\' => \'\',\n    \'member_list_template\' => \'\',\n    \'sort\' => \'0\',\n    \'type\' => \'0\',\n  ),\n  13 => \n  array (\n    \'modelid\' => \'13\',\n    \'siteid\' => \'1\',\n    \'name\' => \'商品模型\',\n    \'description\' => \'模型测试\',\n    \'tablename\' => \'product\',\n    \'setting\' => \'\',\n    \'addtime\' => \'0\',\n    \'items\' => \'0\',\n    \'enablesearch\' => \'1\',\n    \'disabled\' => \'0\',\n    \'default_style\' => \'default\',\n    \'category_template\' => \'category\',\n    \'list_template\' => \'list\',\n    \'show_template\' => \'show\',\n    \'js_template\' => \'\',\n    \'admin_list_template\' => \'\',\n    \'member_add_template\' => \'\',\n    \'member_list_template\' => \'\',\n    \'sort\' => \'0\',\n    \'type\' => \'0\',\n  ),\n  14 => \n  array (\n    \'modelid\' => \'14\',\n    \'siteid\' => \'1\',\n    \'name\' => \'cyb专用模型\',\n    \'description\' => \'cyb成员专用\',\n    \'tablename\' => \'cyb_zy\',\n    \'setting\' => \'\',\n    \'addtime\' => \'0\',\n    \'items\' => \'0\',\n    \'enablesearch\' => \'1\',\n    \'disabled\' => \'0\',\n    \'default_style\' => \'default\',\n    \'category_template\' => \'category\',\n    \'list_template\' => \'list\',\n    \'show_template\' => \'show\',\n    \'js_template\' => \'\',\n    \'admin_list_template\' => \'\',\n    \'member_add_template\' => \'\',\n    \'member_list_template\' => \'\',\n    \'sort\' => \'0\',\n    \'type\' => \'0\',\n  ),\n  12 => \n  array (\n    \'modelid\' => \'12\',\n    \'siteid\' => \'2\',\n    \'name\' => \'文章模型\',\n    \'description\' => \'\',\n    \'tablename\' => \'cybnews\',\n    \'setting\' => \'\',\n    \'addtime\' => \'0\',\n    \'items\' => \'0\',\n    \'enablesearch\' => \'1\',\n    \'disabled\' => \'0\',\n    \'default_style\' => \'cyb\',\n    \'category_template\' => \'category\',\n    \'list_template\' => \'list\',\n    \'show_template\' => \'show\',\n    \'js_template\' => \'\',\n    \'admin_list_template\' => \'\',\n    \'member_add_template\' => \'\',\n    \'member_list_template\' => \'\',\n    \'sort\' => \'0\',\n    \'type\' => \'0\',\n  ),\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('workflow_1.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  1 => \n  array (\n    \'workflowid\' => \'1\',\n    \'siteid\' => \'1\',\n    \'steps\' => \'1\',\n    \'workname\' => \'一级审核\',\n    \'description\' => \'审核一次\',\n    \'setting\' => \'\',\n    \'flag\' => \'0\',\n  ),\n  2 => \n  array (\n    \'workflowid\' => \'2\',\n    \'siteid\' => \'1\',\n    \'steps\' => \'2\',\n    \'workname\' => \'二级审核\',\n    \'description\' => \'审核两次\',\n    \'setting\' => \'\',\n    \'flag\' => \'0\',\n  ),\n  3 => \n  array (\n    \'workflowid\' => \'3\',\n    \'siteid\' => \'1\',\n    \'steps\' => \'3\',\n    \'workname\' => \'三级审核\',\n    \'description\' => \'审核三次\',\n    \'setting\' => \'\',\n    \'flag\' => \'0\',\n  ),\n  4 => \n  array (\n    \'workflowid\' => \'4\',\n    \'siteid\' => \'1\',\n    \'steps\' => \'4\',\n    \'workname\' => \'四级审核\',\n    \'description\' => \'四级审核\',\n    \'setting\' => \'\',\n    \'flag\' => \'0\',\n  ),\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('member_model.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  10 => \n  array (\n    \'modelid\' => \'10\',\n    \'siteid\' => \'1\',\n    \'name\' => \'普通会员\',\n    \'description\' => \'普通会员\',\n    \'tablename\' => \'member_detail\',\n    \'setting\' => \'\',\n    \'addtime\' => \'0\',\n    \'items\' => \'0\',\n    \'enablesearch\' => \'1\',\n    \'disabled\' => \'0\',\n    \'default_style\' => \'\',\n    \'category_template\' => \'\',\n    \'list_template\' => \'\',\n    \'show_template\' => \'\',\n    \'js_template\' => \'\',\n    \'admin_list_template\' => \'\',\n    \'member_add_template\' => \'\',\n    \'member_list_template\' => \'\',\n    \'sort\' => \'0\',\n    \'type\' => \'2\',\n  ),\n);\n?>');
@@ -320,7 +320,7 @@ INSERT INTO `v9_cache` VALUES ('category_items_1.cache.php', 'caches_commons/cac
 INSERT INTO `v9_cache` VALUES ('category_items_2.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  7 => \'1\',\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('category_items_3.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  8 => \'2\',\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('category_items_11.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n);\n?>');
-INSERT INTO `v9_cache` VALUES ('type_content.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n);\n?>');
+INSERT INTO `v9_cache` VALUES ('type_content.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  58 => \n  array (\n    \'typeid\' => \'58\',\n    \'siteid\' => \'1\',\n    \'module\' => \'content\',\n    \'modelid\' => \'0\',\n    \'name\' => \'娱乐\r\',\n    \'parentid\' => \'0\',\n    \'typedir\' => \'\',\n    \'url\' => \'\',\n    \'template\' => \'\',\n    \'listorder\' => \'0\',\n    \'description\' => \'\',\n  ),\n  59 => \n  array (\n    \'typeid\' => \'59\',\n    \'siteid\' => \'1\',\n    \'module\' => \'content\',\n    \'modelid\' => \'0\',\n    \'name\' => \'视频\r\',\n    \'parentid\' => \'0\',\n    \'typedir\' => \'\',\n    \'url\' => \'\',\n    \'template\' => \'\',\n    \'listorder\' => \'0\',\n    \'description\' => \'\',\n  ),\n  60 => \n  array (\n    \'typeid\' => \'60\',\n    \'siteid\' => \'1\',\n    \'module\' => \'content\',\n    \'modelid\' => \'0\',\n    \'name\' => \'社会\',\n    \'parentid\' => \'0\',\n    \'typedir\' => \'\',\n    \'url\' => \'\',\n    \'template\' => \'\',\n    \'listorder\' => \'0\',\n    \'description\' => \'\',\n  ),\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('vote.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('link.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  1 => \n  array (\n    \'is_post\' => \'1\',\n    \'enablecheckcode\' => \'0\',\n  ),\n);\n?>');
 INSERT INTO `v9_cache` VALUES ('category_content_2.cache.php', 'caches_commons/caches_data/', '<?php\nreturn array (\n  10 => \n  array (\n    \'catid\' => \'10\',\n    \'siteid\' => \'2\',\n    \'type\' => \'0\',\n    \'modelid\' => \'12\',\n    \'parentid\' => \'0\',\n    \'arrparentid\' => \'0\',\n    \'child\' => \'0\',\n    \'arrchildid\' => \'10\',\n    \'catname\' => \'cyb一级\',\n    \'style\' => \'\',\n    \'image\' => \'\',\n    \'description\' => \'\',\n    \'parentdir\' => \'\',\n    \'catdir\' => \'cyb_a\',\n    \'url\' => \'http://localhost/phpcms20170206/index.php?m=content&c=index&a=lists&catid=10\',\n    \'items\' => \'0\',\n    \'hits\' => \'0\',\n    \'setting\' => \'{\"workflowid\":\"\",\"ishtml\":\"0\",\"content_ishtml\":\"0\",\"create_to_html_root\":\"0\",\"template_list\":\"cyb\",\"category_template\":\"category\",\"list_template\":\"list\",\"show_template\":\"show\",\"meta_title\":\"\",\"meta_keywords\":\"\",\"meta_description\":\"\",\"presentpoint\":\"1\",\"defaultchargepoint\":\"0\",\"paytype\":\"0\",\"repeatchargedays\":\"1\",\"category_ruleid\":\"6\",\"show_ruleid\":\"16\"}\',\n    \'listorder\' => \'10\',\n    \'ismenu\' => \'1\',\n    \'sethtml\' => \'0\',\n    \'letter\' => \'cybyiji\',\n    \'usable_type\' => \'\',\n    \'create_to_html_root\' => \'0\',\n    \'ishtml\' => \'0\',\n    \'content_ishtml\' => \'0\',\n    \'category_ruleid\' => \'6\',\n    \'show_ruleid\' => \'16\',\n    \'workflowid\' => \'\',\n    \'isdomain\' => \'0\',\n  ),\n);\n?>');
@@ -1203,6 +1203,153 @@ CREATE TABLE `v9_cybnews_data` (
 -- ----------------------------
 -- Records of v9_cybnews_data
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for `v9_cyb_test`
+-- ----------------------------
+DROP TABLE IF EXISTS `v9_cyb_test`;
+CREATE TABLE `v9_cyb_test` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT 'id编号',
+  `name` varchar(40) NOT NULL COMMENT '名字',
+  `age` int(11) NOT NULL,
+  `sex` varchar(10) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `ptime` int(11) NOT NULL,
+  `logo` varchar(100) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=248 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of v9_cyb_test
+-- ----------------------------
+INSERT INTO `v9_cyb_test` VALUES ('1', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('2', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('3', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('4', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('5', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('6', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('7', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('8', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('12', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('13', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('14', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('15', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('16', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('17', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('18', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('19', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('27', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('28', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('29', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('30', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('31', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('32', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('33', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('34', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('35', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('36', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('37', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('38', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('39', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('40', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('41', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('42', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('58', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('59', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('60', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('61', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('62', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('63', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('64', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('65', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('66', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('67', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('68', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('69', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('70', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('71', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('72', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('73', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('74', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('75', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('76', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('77', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('78', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('79', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('80', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('81', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('82', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('83', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('84', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('85', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('86', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('87', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('88', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('89', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('121', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('122', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('123', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('124', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('125', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('126', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('127', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('128', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('129', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('130', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('131', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('132', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('133', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('134', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('135', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('136', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('137', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('138', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('139', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('140', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('141', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('142', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('143', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('144', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('145', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('146', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('147', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('148', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('149', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('150', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('151', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('152', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('153', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('154', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('155', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('156', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('157', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('158', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('159', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('160', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('161', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('162', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('163', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('164', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('165', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('166', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('167', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('168', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('169', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('170', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('171', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('172', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('173', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('174', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('175', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('176', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('177', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('178', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('179', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('180', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('181', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('182', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
+INSERT INTO `v9_cyb_test` VALUES ('183', 'cyb', '12', 'nan', 'qjitgowjhe@qq.com', '123456163', 'asdf');
+INSERT INTO `v9_cyb_test` VALUES ('184', 'qwe', '23', 'as', 'aweq3!h', '12345', 'qwetyh');
 
 -- ----------------------------
 -- Table structure for `v9_cyb_zy`
@@ -5567,7 +5714,7 @@ CREATE TABLE `v9_log` (
   PRIMARY KEY (`logid`),
   KEY `module` (`module`,`file`,`action`),
   KEY `username` (`username`,`action`)
-) ENGINE=MyISAM AUTO_INCREMENT=1029 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1164 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of v9_log
@@ -6600,6 +6747,141 @@ INSERT INTO `v9_log` VALUES ('1025', '', '0', 'block', '', 'block_admin', '?m=bl
 INSERT INTO `v9_log` VALUES ('1026', '', '0', 'block', '', 'block_admin', '?m=block&c=block_admin&a=block_update', '', '1', 'phpcms', '', '2017-03-08 23:48:11');
 INSERT INTO `v9_log` VALUES ('1027', '', '0', 'block', '', 'block_admin', '?m=block&c=block_admin&a=block_update', '', '1', 'phpcms', '', '2017-03-08 23:48:20');
 INSERT INTO `v9_log` VALUES ('1028', '', '0', 'template', '', 'file', '?m=template&c=file&a=visualization', '', '1', 'phpcms', '', '2017-03-08 23:48:22');
+INSERT INTO `v9_log` VALUES ('1029', '', '0', 'admin', '', 'index', '?m=admin&c=index&a=login', '', '0', 'phpcms', '', '2017-03-25 22:18:25');
+INSERT INTO `v9_log` VALUES ('1030', '', '0', 'admin', '', 'index', '?m=admin&c=index&a=login', '', '0', 'phpcms', '', '2017-03-25 22:18:33');
+INSERT INTO `v9_log` VALUES ('1031', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:18:49');
+INSERT INTO `v9_log` VALUES ('1032', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:18:57');
+INSERT INTO `v9_log` VALUES ('1033', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:19:29');
+INSERT INTO `v9_log` VALUES ('1034', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:19:33');
+INSERT INTO `v9_log` VALUES ('1035', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:19:40');
+INSERT INTO `v9_log` VALUES ('1036', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:19:44');
+INSERT INTO `v9_log` VALUES ('1037', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:20:05');
+INSERT INTO `v9_log` VALUES ('1038', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:20:09');
+INSERT INTO `v9_log` VALUES ('1039', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:20:53');
+INSERT INTO `v9_log` VALUES ('1040', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:20:59');
+INSERT INTO `v9_log` VALUES ('1041', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:21:20');
+INSERT INTO `v9_log` VALUES ('1042', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-25 22:21:25');
+INSERT INTO `v9_log` VALUES ('1043', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:42:57');
+INSERT INTO `v9_log` VALUES ('1044', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:42:59');
+INSERT INTO `v9_log` VALUES ('1045', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:08');
+INSERT INTO `v9_log` VALUES ('1046', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:08');
+INSERT INTO `v9_log` VALUES ('1047', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:08');
+INSERT INTO `v9_log` VALUES ('1048', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:09');
+INSERT INTO `v9_log` VALUES ('1049', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:17');
+INSERT INTO `v9_log` VALUES ('1050', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:17');
+INSERT INTO `v9_log` VALUES ('1051', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:17');
+INSERT INTO `v9_log` VALUES ('1052', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:18');
+INSERT INTO `v9_log` VALUES ('1053', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:18');
+INSERT INTO `v9_log` VALUES ('1054', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:18');
+INSERT INTO `v9_log` VALUES ('1055', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:19');
+INSERT INTO `v9_log` VALUES ('1056', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-25 23:43:19');
+INSERT INTO `v9_log` VALUES ('1057', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:47:06');
+INSERT INTO `v9_log` VALUES ('1058', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:48:40');
+INSERT INTO `v9_log` VALUES ('1059', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:48:43');
+INSERT INTO `v9_log` VALUES ('1060', '', '0', 'admin', '', 'database', '?m=admin&c=database&a=export', '', '1', 'phpcms', '', '2017-03-25 23:49:13');
+INSERT INTO `v9_log` VALUES ('1061', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:49:29');
+INSERT INTO `v9_log` VALUES ('1062', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:50:14');
+INSERT INTO `v9_log` VALUES ('1063', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:50:16');
+INSERT INTO `v9_log` VALUES ('1064', '', '0', 'admin', '', 'database', '?m=admin&c=database&a=export', '', '1', 'phpcms', '', '2017-03-25 23:51:25');
+INSERT INTO `v9_log` VALUES ('1065', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-25 23:51:31');
+INSERT INTO `v9_log` VALUES ('1066', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:51:39');
+INSERT INTO `v9_log` VALUES ('1067', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-25 23:51:58');
+INSERT INTO `v9_log` VALUES ('1068', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-25 23:52:26');
+INSERT INTO `v9_log` VALUES ('1069', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-25 23:52:27');
+INSERT INTO `v9_log` VALUES ('1070', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:53:02');
+INSERT INTO `v9_log` VALUES ('1071', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-25 23:53:13');
+INSERT INTO `v9_log` VALUES ('1072', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-25 23:53:32');
+INSERT INTO `v9_log` VALUES ('1073', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-25 23:55:46');
+INSERT INTO `v9_log` VALUES ('1074', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-25 23:56:06');
+INSERT INTO `v9_log` VALUES ('1075', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-25 23:56:10');
+INSERT INTO `v9_log` VALUES ('1076', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=delete', '', '1', 'phpcms', '', '2017-03-26 00:00:48');
+INSERT INTO `v9_log` VALUES ('1077', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:00:56');
+INSERT INTO `v9_log` VALUES ('1078', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:01:01');
+INSERT INTO `v9_log` VALUES ('1079', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:01:06');
+INSERT INTO `v9_log` VALUES ('1080', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:01:30');
+INSERT INTO `v9_log` VALUES ('1081', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:01:33');
+INSERT INTO `v9_log` VALUES ('1082', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 00:07:32');
+INSERT INTO `v9_log` VALUES ('1083', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 00:07:50');
+INSERT INTO `v9_log` VALUES ('1084', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:00');
+INSERT INTO `v9_log` VALUES ('1085', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:15');
+INSERT INTO `v9_log` VALUES ('1086', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:20');
+INSERT INTO `v9_log` VALUES ('1087', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:21');
+INSERT INTO `v9_log` VALUES ('1088', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:22');
+INSERT INTO `v9_log` VALUES ('1089', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:22');
+INSERT INTO `v9_log` VALUES ('1090', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:22');
+INSERT INTO `v9_log` VALUES ('1091', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:27');
+INSERT INTO `v9_log` VALUES ('1092', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 00:08:34');
+INSERT INTO `v9_log` VALUES ('1093', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:08:40');
+INSERT INTO `v9_log` VALUES ('1094', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=delete', '', '1', 'phpcms', '', '2017-03-26 00:08:59');
+INSERT INTO `v9_log` VALUES ('1095', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=delete', '', '1', 'phpcms', '', '2017-03-26 00:09:05');
+INSERT INTO `v9_log` VALUES ('1096', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:09:11');
+INSERT INTO `v9_log` VALUES ('1097', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:09:38');
+INSERT INTO `v9_log` VALUES ('1098', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:10:09');
+INSERT INTO `v9_log` VALUES ('1099', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:10:20');
+INSERT INTO `v9_log` VALUES ('1100', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:10:25');
+INSERT INTO `v9_log` VALUES ('1101', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:10:31');
+INSERT INTO `v9_log` VALUES ('1102', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:10:47');
+INSERT INTO `v9_log` VALUES ('1103', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:11:01');
+INSERT INTO `v9_log` VALUES ('1104', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:12:34');
+INSERT INTO `v9_log` VALUES ('1105', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:12:37');
+INSERT INTO `v9_log` VALUES ('1106', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 00:21:37');
+INSERT INTO `v9_log` VALUES ('1107', '', '0', 'admin', '', 'site', '?m=admin&c=site&a=edit', '', '1', 'phpcms', '', '2017-03-26 00:29:53');
+INSERT INTO `v9_log` VALUES ('1108', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 01:13:11');
+INSERT INTO `v9_log` VALUES ('1109', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 01:13:28');
+INSERT INTO `v9_log` VALUES ('1110', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 01:13:30');
+INSERT INTO `v9_log` VALUES ('1111', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 01:13:44');
+INSERT INTO `v9_log` VALUES ('1112', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 01:14:03');
+INSERT INTO `v9_log` VALUES ('1113', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 01:16:55');
+INSERT INTO `v9_log` VALUES ('1114', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 10:51:29');
+INSERT INTO `v9_log` VALUES ('1115', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 10:59:20');
+INSERT INTO `v9_log` VALUES ('1116', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 10:59:37');
+INSERT INTO `v9_log` VALUES ('1117', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 10:59:40');
+INSERT INTO `v9_log` VALUES ('1118', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 10:59:50');
+INSERT INTO `v9_log` VALUES ('1119', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 11:00:10');
+INSERT INTO `v9_log` VALUES ('1120', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 11:00:13');
+INSERT INTO `v9_log` VALUES ('1121', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=add', '', '1', 'phpcms', '', '2017-03-26 11:00:30');
+INSERT INTO `v9_log` VALUES ('1122', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 11:00:35');
+INSERT INTO `v9_log` VALUES ('1123', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete', '', '1', 'phpcms', '', '2017-03-26 11:00:37');
+INSERT INTO `v9_log` VALUES ('1124', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=update', '', '1', 'phpcms', '', '2017-03-26 11:02:02');
+INSERT INTO `v9_log` VALUES ('1125', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 11:02:03');
+INSERT INTO `v9_log` VALUES ('1126', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete', '', '1', 'phpcms', '', '2017-03-26 11:02:06');
+INSERT INTO `v9_log` VALUES ('1127', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 11:02:07');
+INSERT INTO `v9_log` VALUES ('1128', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=update', '', '1', 'phpcms', '', '2017-03-26 11:02:07');
+INSERT INTO `v9_log` VALUES ('1129', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 11:02:08');
+INSERT INTO `v9_log` VALUES ('1130', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete', '', '1', 'phpcms', '', '2017-03-26 11:02:09');
+INSERT INTO `v9_log` VALUES ('1131', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 11:02:37');
+INSERT INTO `v9_log` VALUES ('1132', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete', '', '1', 'phpcms', '', '2017-03-26 11:02:38');
+INSERT INTO `v9_log` VALUES ('1133', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete', '', '1', 'phpcms', '', '2017-03-26 11:02:54');
+INSERT INTO `v9_log` VALUES ('1134', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete', '', '1', 'phpcms', '', '2017-03-26 11:03:07');
+INSERT INTO `v9_log` VALUES ('1135', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 11:03:10');
+INSERT INTO `v9_log` VALUES ('1136', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=update', '', '1', 'phpcms', '', '2017-03-26 11:03:11');
+INSERT INTO `v9_log` VALUES ('1137', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=add', '', '1', 'phpcms', '', '2017-03-26 11:03:12');
+INSERT INTO `v9_log` VALUES ('1138', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=update', '', '1', 'phpcms', '', '2017-03-26 11:03:14');
+INSERT INTO `v9_log` VALUES ('1139', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete', '', '1', 'phpcms', '', '2017-03-26 11:03:49');
+INSERT INTO `v9_log` VALUES ('1140', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:04:25');
+INSERT INTO `v9_log` VALUES ('1141', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:04:32');
+INSERT INTO `v9_log` VALUES ('1142', '', '0', 'admin', '', 'menu', '?m=admin&c=menu&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:04:35');
+INSERT INTO `v9_log` VALUES ('1143', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete1', '', '1', 'phpcms', '', '2017-03-26 11:04:42');
+INSERT INTO `v9_log` VALUES ('1144', '', '0', 'admin', '', 'badword', '?m=admin&c=badword&a=add', '', '1', 'phpcms', '', '2017-03-26 11:04:49');
+INSERT INTO `v9_log` VALUES ('1145', '', '0', 'admin', '', 'badword', '?m=admin&c=badword&a=add', '', '1', 'phpcms', '', '2017-03-26 11:05:00');
+INSERT INTO `v9_log` VALUES ('1146', '', '0', 'admin', '', 'badword', '?m=admin&c=badword&a=delete', '', '1', 'phpcms', '', '2017-03-26 11:06:25');
+INSERT INTO `v9_log` VALUES ('1147', '', '0', 'admin', '', 'copyfrom', '?m=admin&c=copyfrom&a=add', '', '1', 'phpcms', '', '2017-03-26 11:06:37');
+INSERT INTO `v9_log` VALUES ('1148', '', '0', 'member', '', 'member_menu', '?m=member&c=member_menu&a=manage', '', '1', 'phpcms', '', '2017-03-26 11:06:42');
+INSERT INTO `v9_log` VALUES ('1149', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete1', '', '1', 'phpcms', '', '2017-03-26 11:21:34');
+INSERT INTO `v9_log` VALUES ('1150', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=delete1', '', '1', 'phpcms', '', '2017-03-26 11:21:38');
+INSERT INTO `v9_log` VALUES ('1151', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:21:54');
+INSERT INTO `v9_log` VALUES ('1152', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:00');
+INSERT INTO `v9_log` VALUES ('1153', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:17');
+INSERT INTO `v9_log` VALUES ('1154', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:24');
+INSERT INTO `v9_log` VALUES ('1155', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:27');
+INSERT INTO `v9_log` VALUES ('1156', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:29');
+INSERT INTO `v9_log` VALUES ('1157', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:34');
+INSERT INTO `v9_log` VALUES ('1158', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:36');
+INSERT INTO `v9_log` VALUES ('1159', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:38');
+INSERT INTO `v9_log` VALUES ('1160', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '', '2017-03-26 11:22:41');
+INSERT INTO `v9_log` VALUES ('1161', '', '0', 'cyb', '', 'cyb', '?m=cyb&c=cyb&a=update', '', '1', 'phpcms', '', '2017-03-26 11:24:19');
+INSERT INTO `v9_log` VALUES ('1162', '', '0', 'admin', '', 'index', '?m=admin&c=index&a=login', '', '0', 'phpcms', '', '2017-03-26 22:27:58');
+INSERT INTO `v9_log` VALUES ('1163', '', '0', 'admin', '', 'index', '?m=admin&c=index&a=login', '', '0', 'phpcms', '', '2017-03-26 22:28:28');
 
 -- ----------------------------
 -- Table structure for `v9_member`
@@ -6794,7 +7076,7 @@ CREATE TABLE `v9_menu` (
   KEY `listorder` (`listorder`),
   KEY `parentid` (`parentid`),
   KEY `module` (`m`,`c`,`a`)
-) ENGINE=MyISAM AUTO_INCREMENT=1632 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1639 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of v9_menu
@@ -7100,6 +7382,10 @@ INSERT INTO `v9_menu` VALUES ('1628', 'poster_stat', '1620', 'poster', 'poster',
 INSERT INTO `v9_menu` VALUES ('1629', 'poster_setting', '1620', 'poster', 'space', 'setting', '', '0', '0', '1', '1', '1', '1', '1');
 INSERT INTO `v9_menu` VALUES ('1630', 'create_poster_js', '1620', 'poster', 'space', 'create_js', '', '0', '1', '1', '1', '1', '1', '1');
 INSERT INTO `v9_menu` VALUES ('1631', 'poster_template', '1620', 'poster', 'space', 'poster_template', '', '0', '1', '1', '1', '1', '1', '1');
+INSERT INTO `v9_menu` VALUES ('1632', 'cyb', '29', 'cyb', 'cyb', 'init', '', '0', '1', '1', '1', '1', '1', '1');
+INSERT INTO `v9_menu` VALUES ('1637', 'update', '1632', 'cyb', 'cyb', 'update', '', '0', '1', '1', '1', '1', '1', '1');
+INSERT INTO `v9_menu` VALUES ('1636', 'add', '1632', 'cyb', 'cyb', 'add', '', '0', '1', '1', '1', '1', '1', '1');
+INSERT INTO `v9_menu` VALUES ('1638', 'delete', '1632', 'cyb', 'cyb', 'delete1', '', '0', '1', '1', '1', '1', '1', '1');
 
 -- ----------------------------
 -- Table structure for `v9_model`
@@ -7388,6 +7674,7 @@ INSERT INTO `v9_module` VALUES ('video', '视频库', '', '0', '1.0', '', '', '0
 INSERT INTO `v9_module` VALUES ('link', '友情链接', '', '0', '1.0', '', 'array (\n  1 => \n  array (\n    \'is_post\' => \'1\',\n    \'enablecheckcode\' => \'0\',\n  ),\n)', '0', '0', '2010-09-06', '2010-09-06');
 INSERT INTO `v9_module` VALUES ('announce', '公告', 'announce/', '0', '1.0', '公告', '', '0', '0', '2017-02-22', '2017-02-22');
 INSERT INTO `v9_module` VALUES ('poster', '广告模块', 'poster/', '0', '1.0', '广告模块', '', '0', '0', '2017-02-22', '2017-02-22');
+INSERT INTO `v9_module` VALUES ('cyb', 'cyb自定义', '', '1', '1.0', '', '', '0', '0', '2017-03-25', '2017-03-25');
 
 -- ----------------------------
 -- Table structure for `v9_news`
@@ -8999,7 +9286,7 @@ CREATE TABLE `v9_session` (
 -- ----------------------------
 -- Records of v9_session
 -- ----------------------------
-INSERT INTO `v9_session` VALUES ('ko2poh0a2oj4t0pm7hmg1f4rq5', '1', '', '1488988501', '1', '0', 'admin', 'index', 'public_session_life', 'code|s:0:\"\";userid|s:1:\"1\";roleid|s:1:\"1\";pc_hash|s:6:\"c8qdir\";lock_screen|i:0;');
+INSERT INTO `v9_session` VALUES ('8a2b380gqa0mjblmiiopglp9r4', '1', '', '1490542989', '1', '0', 'admin', 'index', 'public_session_life', 'code|s:0:\"\";userid|s:1:\"1\";roleid|s:1:\"1\";pc_hash|s:6:\"GWRgWQ\";lock_screen|i:0;');
 
 -- ----------------------------
 -- Table structure for `v9_site`
