@@ -365,5 +365,19 @@ return array (
     'installdate' => '2017-03-25',
     'updatedate' => '2017-03-25',
   ),
+  'mytest' => 
+  array (
+    'module' => 'mytest',
+    'name' => '测试模块',
+    'url' => 'mytest/',
+    'iscore' => '1',
+    'version' => '1.0',
+    'description' => '新模块开发测试',
+    'setting' => '',
+    'listorder' => '0',
+    'disabled' => '0',
+    'installdate' => '2017-03-27',
+    'updatedate' => '2017-03-27',
+  ),
 );
 ?>

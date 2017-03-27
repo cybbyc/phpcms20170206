@@ -508,3 +508,10 @@
 <?php exit;?>03-26 01:11:28 | 2 | include(): Failed opening 'H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php' for inclusion (include_path='.;C:\php\pear') | phpcms\modules\cyb\cyb.php | 13
 <?php exit;?>03-26 01:11:44 | 2 | include(H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php): failed to open stream: No such file or directory | phpcms\modules\cyb\cyb.php | 13
 <?php exit;?>03-26 01:11:44 | 2 | include(): Failed opening 'H:\object\wwwroot\phpcms20170206\phpcms\modules\cyb\templates\list.tpl.php' for inclusion (include_path='.;C:\php\pear') | phpcms\modules\cyb\cyb.php | 13
+<?php exit;?>03-27 16:31:40 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
+<?php exit;?>03-27 16:31:46 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
+<?php exit;?>03-27 16:31:50 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
+<?php exit;?>03-27 16:32:38 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
+<?php exit;?>03-27 16:33:11 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
+<?php exit;?>03-27 16:50:11 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
+<?php exit;?>03-27 16:52:08 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27

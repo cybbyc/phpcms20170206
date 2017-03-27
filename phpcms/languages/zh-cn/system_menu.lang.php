@@ -462,4 +462,7 @@ $LANG['add'] = '添加';
 $LANG['add'] = '添加';
 $LANG['update'] = '修改';
 $LANG['delete'] = '删除';
+$LANG['mytest'] = '测试模块';
+$LANG['mytest'] = '测试模块';
+$LANG['add'] = '添加数据';
 ?>

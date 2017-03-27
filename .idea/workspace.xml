@@ -2,35 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f8105f9-a11a-446d-a983-75e12eefe5f5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/phpcms20170206.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\default\content\category.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\default\content\header_page.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\default\content\list.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\default\content\list_download.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\default\content\list_picture.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\default\content\message.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\default\content\page.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\default\content\show.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_template\example\content\index.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\312f64c6ffbb02bf4d0e735bbdfde721.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\4ae5af52da2a50128a57c6922e8e06a2.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\5c7304a1c24923cd20d6f18aaae35158.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\628722440623a08e919c8acc904ca402.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\6e453e57e124932e7b0fe09d4a26349c.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\76d901aa1d17ffd5e70a9d10047483ce.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\982e4c51ff687a96fa5cf2e1e7dafda6.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\a494e25109259c9a4720926aa72c5169.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\a84953510f4c21d193335344c5a752ee.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\ae846bace2bbae6de5da6b57911a0b07.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\c11c0609e2a132f53224630c097f5e78.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\de7bced6f7a46cb1f999046f20953e7f.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\ee029b6b1ac317f78b3de428fae0c794.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="H:\object\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\ee397f8797a93fe87737323d79966eec.cache.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpcms/modules/mytest/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpcms/modules/mytest/mytest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpcms/modules/mytest/templates/mytest_add.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpcms/modules/mytest/templates/mytest_list.tpl.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phpcms/model/mytest_model.class.php" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_template\default\content\footer.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_template\default\content\header.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_template\default\member\mini.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_template\example\content\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_template\example\cyb\cyb.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_template\example\cyb\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_template\example\cyb\show.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\cc159208645a0e076548df524f86ed7d.cache.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wwwroot\phpcms20170206\caches\caches_tpl_data\caches_data\f2ab4d6ac430dfc2e44455e997999efb.cache.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_linkage/caches_data/1.cache.php" afterPath="$PROJECT_DIR$/caches/caches_linkage/caches_data/1.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/badword.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/badword.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/category_content.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/category_content.cache.php" />
@@ -42,16 +27,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/category_items_14.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/category_items_14.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/category_items_2.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/category_items_2.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/category_items_3.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/category_items_3.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_tpl_data/caches_data/cc159208645a0e076548df524f86ed7d.cache.php" afterPath="$PROJECT_DIR$/caches/caches_tpl_data/caches_data/cc159208645a0e076548df524f86ed7d.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/common.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/common.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_admin/caches_data/copyfrom.cache.php" afterPath="$PROJECT_DIR$/caches/caches_admin/caches_data/copyfrom.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/downservers.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/downservers.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_tpl_data/caches_data/f2ab4d6ac430dfc2e44455e997999efb.cache.php" afterPath="$PROJECT_DIR$/caches/caches_tpl_data/caches_data/f2ab4d6ac430dfc2e44455e997999efb.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_template/default/content/footer.php" afterPath="$PROJECT_DIR$/caches/caches_template/default/content/footer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/error_log.php" afterPath="$PROJECT_DIR$/caches/error_log.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_member/caches_data/grouplist.cache.php" afterPath="$PROJECT_DIR$/caches/caches_member/caches_data/grouplist.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpcms/templates/example/content/index.html" afterPath="$PROJECT_DIR$/phpcms/templates/example/content/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_template/default/content/index.php" afterPath="$PROJECT_DIR$/caches/caches_template/default/content/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/ipbanned.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/ipbanned.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/keylink.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/keylink.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/link.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/link.cache.php" />
@@ -75,13 +55,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_search/caches_data/search_model_1.cache.php" afterPath="$PROJECT_DIR$/caches/caches_search/caches_data/search_model_1.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/sitelist.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/sitelist.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/special.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/special.cache.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/type_content.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/type_content.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phpcms/languages/zh-cn/system_menu.lang.php" afterPath="$PROJECT_DIR$/phpcms/languages/zh-cn/system_menu.lang.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_search/caches_data/type_model_1.cache.php" afterPath="$PROJECT_DIR$/caches/caches_search/caches_data/type_model_1.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_search/caches_data/type_module_1.cache.php" afterPath="$PROJECT_DIR$/caches/caches_search/caches_data/type_module_1.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/urlrules.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/urlrules.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/urlrules_detail.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/urlrules_detail.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/vote.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/vote.cache.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/caches/caches_commons/caches_data/workflow_1.cache.php" afterPath="$PROJECT_DIR$/caches/caches_commons/caches_data/workflow_1.cache.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="phpcms20170206.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,28 +86,7 @@
     <favorites_list name="phpcms20170206" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/caches/caches_template/example/content/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5411765" vertical-offset="2664" max-vertical-offset="3429">
-              <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpcms/templates/example/content/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-80.25" vertical-offset="0" max-vertical-offset="3429">
-              <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -140,14 +100,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/phpcms/templates/example/content/index.html" />
+        <option value="$PROJECT_DIR$/phpcms/modules/mytest/index.php" />
+        <option value="$PROJECT_DIR$/phpcms/model/mytest_model.class.php" />
+        <option value="$PROJECT_DIR$/phpcms/modules/mytest/templates/mytest_list.tpl.php" />
+        <option value="$PROJECT_DIR$/phpcms/modules/mytest/templates/mytest_add.tpl.php" />
+        <option value="$PROJECT_DIR$/phpcms/modules/mytest/mytest.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="30" />
-    <option name="width" value="1333" />
-    <option name="height" value="968" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1040" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -156,7 +122,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -175,6 +141,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -235,7 +202,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="caches" />
+              <option name="myItemId" value="phpcms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mytest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -249,24 +224,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="caches" />
+              <option name="myItemId" value="phpcms" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="caches_template" />
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mytest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpcms20170206" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpcms20170206" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpcms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpcms20170206" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpcms20170206" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="phpcms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\wwwroot\phpcms20170206\phpcms\modules\mytest\templates" />
       <recent name="H:\object\wwwroot\phpcms20170206\caches" />
     </key>
   </component>
@@ -285,15 +310,23 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-env-vars>false</pass-parent-env-vars>
+      <envs />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6f8105f9-a11a-446d-a983-75e12eefe5f5" name="Default" comment="" />
@@ -304,25 +337,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1333" height="968" extended-state="1" />
+    <frame x="-8" y="-8" width="1040" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23242188" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -351,16 +384,204 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/phpcms/templates/example/content/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-80.25" vertical-offset="0" max-vertical-offset="3429">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2033" max-vertical-offset="2413">
           <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/caches/caches_template/example/content/index.php">
+    <entry file="file://$PROJECT_DIR$/phpcms/templates/example/content/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5411765" vertical-offset="2664" max-vertical-offset="3429">
-          <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+        <state vertical-scroll-proportion="3.2778676" vertical-offset="4" max-vertical-offset="2413">
+          <caret line="107" column="4" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/admin/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0346534" vertical-offset="627" max-vertical-offset="7467">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1490596609236" expanded="true" signature="-1:-1" placeholder="DROP TABLE I..." />
+            <marker date="1490596609236" expanded="true" signature="-1:-1" placeholder="CREATE TABLE..IF..." />
+            <marker date="1490596609236" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1490596609236" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/content/create_html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3514853" vertical-offset="1425" max-vertical-offset="10355">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1490596609343" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1490596609343" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1490596609343" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1490596609343" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1490596609343" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1490596609343" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1490596609343" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..." />
+            <marker date="1490596609343" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/content/push.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.72442245" vertical-offset="743" max-vertical-offset="1349">
+          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/model/link_model.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/model/mytest_model.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1277311" vertical-offset="0" max-vertical-offset="595">
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/admin/classes/admin.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.821428" vertical-offset="114" max-vertical-offset="4997">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/libs/functions/global.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44444445" vertical-offset="14345" max-vertical-offset="34048">
+          <caret line="773" column="1" selection-start-line="773" selection-start-column="1" selection-end-line="773" selection-end-column="1" />
+          <folding>
+            <marker date="1490596609186" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609186" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609186" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609186" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1490596609186" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/link/templates/link_list.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9114391" vertical-offset="570" max-vertical-offset="2090">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/libs/classes/model.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3333333" vertical-offset="798" max-vertical-offset="4541">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/mytest/templates/mytest_list.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.054054" vertical-offset="946" max-vertical-offset="1900">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/content/templates/content_add.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21033211" vertical-offset="0" max-vertical-offset="3002">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/content/templates/content_page.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6291513" vertical-offset="883" max-vertical-offset="1425">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/mytest/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1312608" vertical-offset="0" max-vertical-offset="579">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/libs/classes/form.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.964286" vertical-offset="7262" max-vertical-offset="7828">
+          <caret line="391" column="23" selection-start-line="391" selection-start-column="23" selection-end-line="391" selection-end-column="23" />
+          <folding>
+            <marker date="1490596609139" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609139" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609139" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609139" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609139" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609139" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1490596609139" expanded="true" signature="-1:-1" placeholder="{&quot;inputField&quot;: &quot;EXTERNAL_FRAGMENT&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/link/templates/link_add.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.857142" vertical-offset="570" max-vertical-offset="1976">
+          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/mytest/mytest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.75" vertical-offset="333" max-vertical-offset="988">
+          <caret line="26" column="39" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/content/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3505535" vertical-offset="114" max-vertical-offset="21964">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/mytest/templates/mytest_add.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68911916" vertical-offset="475" max-vertical-offset="1406">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/message/message.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26855123" vertical-offset="0" max-vertical-offset="5586">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpcms/modules/link/link.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40282685" vertical-offset="1425" max-vertical-offset="7201">
+          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
           <folding />
         </state>
       </provider>
