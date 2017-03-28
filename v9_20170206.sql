@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-03-27 17:33:23
+Date: 2017-03-28 16:47:07
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -38,7 +38,7 @@ CREATE TABLE `v9_admin` (
 -- ----------------------------
 -- Records of v9_admin
 -- ----------------------------
-INSERT INTO `v9_admin` VALUES ('1', 'phpcms', '3a7bebf2a28bad1567f68bd18fe88eb7', '1', 'AcLPrT', '127.0.0.1', '1490597229', 'cyb@qq.com', '', '', '');
+INSERT INTO `v9_admin` VALUES ('1', 'phpcms', '3a7bebf2a28bad1567f68bd18fe88eb7', '1', 'AcLPrT', '127.0.0.1', '1490682329', 'cyb@qq.com', '', '', '');
 INSERT INTO `v9_admin` VALUES ('2', 'cyb', '4dae8fe44d96aff2eb9f60ea38414f1b', '2', 'nmCa8G', null, '0', 'abc@qq.com', '兵', '', '');
 
 -- ----------------------------
@@ -1217,7 +1217,7 @@ CREATE TABLE `v9_cyb_test` (
   `ptime` int(11) NOT NULL,
   `logo` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=248 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=185 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of v9_cyb_test
@@ -2384,7 +2384,7 @@ CREATE TABLE `v9_link` (
 INSERT INTO `v9_link` VALUES ('1', '1', '0', '1', 'PHPCMS', 'http://www.phpcms.cn', 'http://www.phpcms.cn/images/logo_88_31.gif', '', '', '0', '0', '1', '1487693600');
 INSERT INTO `v9_link` VALUES ('2', '1', '0', '1', '盛大在线', 'http://www.sdo.com', 'http://www.snda.com/cn/logo/comp_logo_sdo.gif', '', '', '0', '0', '1', '1487693600');
 INSERT INTO `v9_link` VALUES ('3', '1', '54', '1', '鲲鹏it', 'http://www.szkpedu.com/', 'http://www.kunpengit.net/images/logo.gif', '鲲鹏官网', '陈裕滨', '0', '1', '1', '1487693872');
-INSERT INTO `v9_link` VALUES ('4', '1', '55', '0', '淘宝', 'http://www.taobao.com/', '', '', '', '0', '0', '1', '0');
+INSERT INTO `v9_link` VALUES ('4', '1', '55', '0', '淘宝1', 'http://www.taobao.com/', '', '', '', '0', '0', '1', '0');
 
 -- ----------------------------
 -- Table structure for v9_linkage
@@ -5714,7 +5714,7 @@ CREATE TABLE `v9_log` (
   PRIMARY KEY (`logid`),
   KEY `module` (`module`,`file`,`action`),
   KEY `username` (`username`,`action`)
-) ENGINE=MyISAM AUTO_INCREMENT=1223 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=1318 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of v9_log
@@ -6941,6 +6941,101 @@ INSERT INTO `v9_log` VALUES ('1219', '', '0', 'mytest', '', 'mytest', '?m=mytest
 INSERT INTO `v9_log` VALUES ('1220', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-27 17:14:53');
 INSERT INTO `v9_log` VALUES ('1221', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-27 17:15:14');
 INSERT INTO `v9_log` VALUES ('1222', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-27 17:15:18');
+INSERT INTO `v9_log` VALUES ('1223', '', '0', 'admin', '', 'index', '?m=admin&c=index&a=login', '', '0', 'phpcms', '127.0.0.1', '2017-03-28 14:25:13');
+INSERT INTO `v9_log` VALUES ('1224', '', '0', 'admin', '', 'index', '?m=admin&c=index&a=login', '', '0', 'phpcms', '127.0.0.1', '2017-03-28 14:25:29');
+INSERT INTO `v9_log` VALUES ('1225', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:25:48');
+INSERT INTO `v9_log` VALUES ('1226', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:28:51');
+INSERT INTO `v9_log` VALUES ('1227', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:29:00');
+INSERT INTO `v9_log` VALUES ('1228', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:32:25');
+INSERT INTO `v9_log` VALUES ('1229', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:33:15');
+INSERT INTO `v9_log` VALUES ('1230', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:33:21');
+INSERT INTO `v9_log` VALUES ('1231', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:35:41');
+INSERT INTO `v9_log` VALUES ('1232', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:40:22');
+INSERT INTO `v9_log` VALUES ('1233', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:42:46');
+INSERT INTO `v9_log` VALUES ('1234', '', '0', 'announce', '', 'admin_announce', '?m=announce&c=admin_announce&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:42:54');
+INSERT INTO `v9_log` VALUES ('1235', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:45:16');
+INSERT INTO `v9_log` VALUES ('1236', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:46:08');
+INSERT INTO `v9_log` VALUES ('1237', '', '0', 'poster', '', 'space', '?m=poster&c=space&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:46:31');
+INSERT INTO `v9_log` VALUES ('1238', '', '0', 'dbsource', '', 'data', '?m=dbsource&c=data&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:46:38');
+INSERT INTO `v9_log` VALUES ('1239', '', '0', 'content', '', 'content', '?m=content&c=content&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:46:55');
+INSERT INTO `v9_log` VALUES ('1240', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:47:53');
+INSERT INTO `v9_log` VALUES ('1241', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:48:42');
+INSERT INTO `v9_log` VALUES ('1242', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:48:55');
+INSERT INTO `v9_log` VALUES ('1243', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:49:08');
+INSERT INTO `v9_log` VALUES ('1244', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:50:35');
+INSERT INTO `v9_log` VALUES ('1245', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:51:07');
+INSERT INTO `v9_log` VALUES ('1246', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:52:56');
+INSERT INTO `v9_log` VALUES ('1247', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:53:06');
+INSERT INTO `v9_log` VALUES ('1248', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:53:21');
+INSERT INTO `v9_log` VALUES ('1249', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:53:43');
+INSERT INTO `v9_log` VALUES ('1250', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:56:08');
+INSERT INTO `v9_log` VALUES ('1251', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 14:58:28');
+INSERT INTO `v9_log` VALUES ('1252', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:00:31');
+INSERT INTO `v9_log` VALUES ('1253', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:01:31');
+INSERT INTO `v9_log` VALUES ('1254', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:02:20');
+INSERT INTO `v9_log` VALUES ('1255', '', '0', 'announce', '', 'admin_announce', '?m=announce&c=admin_announce&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:08:02');
+INSERT INTO `v9_log` VALUES ('1256', '', '0', 'announce', '', 'admin_announce', '?m=announce&c=admin_announce&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:08:33');
+INSERT INTO `v9_log` VALUES ('1257', '', '0', 'announce', '', 'admin_announce', '?m=announce&c=admin_announce&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:08:45');
+INSERT INTO `v9_log` VALUES ('1258', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:12:37');
+INSERT INTO `v9_log` VALUES ('1259', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:12:47');
+INSERT INTO `v9_log` VALUES ('1260', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:18:29');
+INSERT INTO `v9_log` VALUES ('1261', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:18:42');
+INSERT INTO `v9_log` VALUES ('1262', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:18:57');
+INSERT INTO `v9_log` VALUES ('1263', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:19:04');
+INSERT INTO `v9_log` VALUES ('1264', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:25:48');
+INSERT INTO `v9_log` VALUES ('1265', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:26:01');
+INSERT INTO `v9_log` VALUES ('1266', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:26:30');
+INSERT INTO `v9_log` VALUES ('1267', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:26:43');
+INSERT INTO `v9_log` VALUES ('1268', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:26:44');
+INSERT INTO `v9_log` VALUES ('1269', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:38:53');
+INSERT INTO `v9_log` VALUES ('1270', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:40:14');
+INSERT INTO `v9_log` VALUES ('1271', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:40:58');
+INSERT INTO `v9_log` VALUES ('1272', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:41:53');
+INSERT INTO `v9_log` VALUES ('1273', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:46:51');
+INSERT INTO `v9_log` VALUES ('1274', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:46:55');
+INSERT INTO `v9_log` VALUES ('1275', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:47:27');
+INSERT INTO `v9_log` VALUES ('1276', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:47:44');
+INSERT INTO `v9_log` VALUES ('1277', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:47:45');
+INSERT INTO `v9_log` VALUES ('1278', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:48:32');
+INSERT INTO `v9_log` VALUES ('1279', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:48:33');
+INSERT INTO `v9_log` VALUES ('1280', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:50:42');
+INSERT INTO `v9_log` VALUES ('1281', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:50:49');
+INSERT INTO `v9_log` VALUES ('1282', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:52:09');
+INSERT INTO `v9_log` VALUES ('1283', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:52:11');
+INSERT INTO `v9_log` VALUES ('1284', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:52:18');
+INSERT INTO `v9_log` VALUES ('1285', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:53:38');
+INSERT INTO `v9_log` VALUES ('1286', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:53:39');
+INSERT INTO `v9_log` VALUES ('1287', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:53:42');
+INSERT INTO `v9_log` VALUES ('1288', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:53:43');
+INSERT INTO `v9_log` VALUES ('1289', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:56:28');
+INSERT INTO `v9_log` VALUES ('1290', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:56:45');
+INSERT INTO `v9_log` VALUES ('1291', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:57:49');
+INSERT INTO `v9_log` VALUES ('1292', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:57:58');
+INSERT INTO `v9_log` VALUES ('1293', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:58:18');
+INSERT INTO `v9_log` VALUES ('1294', '', '0', 'link', '', 'link', '?m=link&c=link&a=edit', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 15:58:28');
+INSERT INTO `v9_log` VALUES ('1295', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:00:58');
+INSERT INTO `v9_log` VALUES ('1296', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:01:06');
+INSERT INTO `v9_log` VALUES ('1297', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:04:48');
+INSERT INTO `v9_log` VALUES ('1298', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:05:07');
+INSERT INTO `v9_log` VALUES ('1299', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:05:08');
+INSERT INTO `v9_log` VALUES ('1300', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:06:17');
+INSERT INTO `v9_log` VALUES ('1301', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=add', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:06:23');
+INSERT INTO `v9_log` VALUES ('1302', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:06:58');
+INSERT INTO `v9_log` VALUES ('1303', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:07:05');
+INSERT INTO `v9_log` VALUES ('1304', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:07:41');
+INSERT INTO `v9_log` VALUES ('1305', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:07:51');
+INSERT INTO `v9_log` VALUES ('1306', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:11:12');
+INSERT INTO `v9_log` VALUES ('1307', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:12:30');
+INSERT INTO `v9_log` VALUES ('1308', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:15:09');
+INSERT INTO `v9_log` VALUES ('1309', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:15:14');
+INSERT INTO `v9_log` VALUES ('1310', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:15:17');
+INSERT INTO `v9_log` VALUES ('1311', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=update', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:15:26');
+INSERT INTO `v9_log` VALUES ('1312', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=del', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:19:54');
+INSERT INTO `v9_log` VALUES ('1313', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=del', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:35:48');
+INSERT INTO `v9_log` VALUES ('1314', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=del', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:36:02');
+INSERT INTO `v9_log` VALUES ('1315', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=del', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:39:38');
+INSERT INTO `v9_log` VALUES ('1316', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=del', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:42:42');
+INSERT INTO `v9_log` VALUES ('1317', '', '0', 'mytest', '', 'mytest', '?m=mytest&c=mytest&a=del', '', '1', 'phpcms', '127.0.0.1', '2017-03-28 16:44:52');
 
 -- ----------------------------
 -- Table structure for v9_member
@@ -7751,7 +7846,7 @@ CREATE TABLE `v9_mytest` (
   `inputtime` int(11) NOT NULL,
   `updatetime` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2038 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=190 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of v9_mytest
@@ -7871,19 +7966,18 @@ INSERT INTO `v9_mytest` VALUES ('169', '面若桃花', '凯美瑞怡虽然二大
 INSERT INTO `v9_mytest` VALUES ('170', '和我让他', '悲痛欲绝水电费因为', '抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童', 'cyb', '123456789', '178446461');
 INSERT INTO `v9_mytest` VALUES ('171', '面若桃花', '凯美瑞怡虽然二大飞哥万日元', '默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育', 'cyb', '48414', '441512515');
 INSERT INTO `v9_mytest` VALUES ('172', '和我让他', '悲痛欲绝水电费因为', '抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童', 'cyb', '123456789', '178446461');
-INSERT INTO `v9_mytest` VALUES ('173', '面若桃花', '凯美瑞怡虽然二大飞哥万日元', '默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育', 'cyb', '48414', '441512515');
-INSERT INTO `v9_mytest` VALUES ('174', '和我让他', '悲痛欲绝水电费因为', '抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童', 'cyb', '123456789', '178446461');
-INSERT INTO `v9_mytest` VALUES ('175', '面若桃花', '凯美瑞怡虽然二大飞哥万日元', '默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育', 'cyb', '48414', '441512515');
 INSERT INTO `v9_mytest` VALUES ('176', '和我让他', '悲痛欲绝水电费因为', '抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童', 'cyb', '123456789', '178446461');
 INSERT INTO `v9_mytest` VALUES ('177', '面若桃花', '凯美瑞怡虽然二大飞哥万日元', '默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育', 'cyb', '48414', '441512515');
 INSERT INTO `v9_mytest` VALUES ('178', '和我让他', '悲痛欲绝水电费因为', '抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童', 'cyb', '123456789', '178446461');
 INSERT INTO `v9_mytest` VALUES ('179', '面若桃花', '凯美瑞怡虽然二大飞哥万日元', '默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育', 'cyb', '48414', '441512515');
-INSERT INTO `v9_mytest` VALUES ('180', '和我让他', '悲痛欲绝水电费因为', '抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童', 'cyb', '123456789', '178446461');
 INSERT INTO `v9_mytest` VALUES ('181', '面若桃花', '凯美瑞怡虽然二大飞哥万日元', '默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育', 'cyb', '48414', '441512515');
-INSERT INTO `v9_mytest` VALUES ('182', '和我让他', '悲痛欲绝水电费因为', '抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童', 'cyb', '123456789', '178446461');
+INSERT INTO `v9_mytest` VALUES ('182', '11111112222', '555555555555555', '7777777777777777666666666666665', 'cyb', '123456789', '1490688926');
 INSERT INTO `v9_mytest` VALUES ('183', '面若桃花', '凯美瑞怡虽然二大飞哥万日元', '默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育', 'cyb', '48414', '441512515');
 INSERT INTO `v9_mytest` VALUES ('184', '和我让他', '悲痛欲绝水电费因为', '抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童抗日人员我认为金融与凤凰电饭锅，期儿童', 'cyb', '123456789', '178446461');
-INSERT INTO `v9_mytest` VALUES ('185', '面若桃花', '凯美瑞怡虽然二大飞哥万日元', '默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育默认与扩大覆盖法规和认同一张我二姨符合体育', 'cyb', '48414', '441512515');
+INSERT INTO `v9_mytest` VALUES ('186', '的点点滴滴多', '反反复复付付付多', '呵呵呵呵呵呵呵呵或或或或或或或或若', '', '1490685961', '1490687878');
+INSERT INTO `v9_mytest` VALUES ('187', '2222222222222', '33333333333333333', '444444444444444444', '', '1490686003', '1490688425');
+INSERT INTO `v9_mytest` VALUES ('188', '2277777777', '777777777777777777', '7777777777777777777777777777', '', '1490688307', '1490688471');
+INSERT INTO `v9_mytest` VALUES ('189', '111111111', '2222222222', '3333333333333333333333333', '', '1490688383', '0');
 
 -- ----------------------------
 -- Table structure for v9_news
@@ -9495,7 +9589,7 @@ CREATE TABLE `v9_session` (
 -- ----------------------------
 -- Records of v9_session
 -- ----------------------------
-INSERT INTO `v9_session` VALUES ('cqq1h62jnca1b69b5bcji2fig2', '1', '127.0.0.1', '1490607149', '1', '0', 'admin', 'index', 'public_session_life', 'code|s:0:\"\";userid|s:1:\"1\";roleid|s:1:\"1\";pc_hash|s:6:\"h6fmNq\";lock_screen|i:0;');
+INSERT INTO `v9_session` VALUES ('3tttktspv2o8ct7ojpdosa4sa6', '1', '127.0.0.1', '1490690693', '1', '0', 'mytest', 'mytest', 'init', 'code|s:0:\"\";userid|s:1:\"1\";roleid|s:1:\"1\";pc_hash|s:6:\"5QQFpe\";lock_screen|i:0;');
 
 -- ----------------------------
 -- Table structure for v9_site
