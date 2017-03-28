@@ -13,32 +13,32 @@ include $this->admin_tpl('header','admin');
 </script>
 
 <div class="pad_10">
-    <form action="?m=mytest&c=mytest&a=add" method="post" name="myform" id="myform">
+    <form action="?m=mytest&c=mytest&a=update&id=<?php echo $id;?>" method="post" name="myform" id="myform">
         <table cellpadding="2" cellspacing="1" class="table_form" width="100%">
 
             <tr>
                 <th width="100">新闻标题：</th>
                 <td><input type="text" name="mytest[title]" id="title"
-                           size="30" class="input-text"></td>
+                           size="30" class="input-text" value="<?php echo $title;?>"></td>
             </tr>
 
             <tr>
                 <th width="100">新闻概要：</th>
                 <td><input type="text" name="mytest[des]" id="des"
-                           size="30" class="input-text"></td>
+                           size="30" class="input-text" value="<?php echo $des;?>"></td>
             </tr>
 
             <tr>
                 <th width="100">新闻内容：</th>
-                <td><textarea name='mytest[content]' id="content"></textarea><?php echo form::editor('content','full','mytest')?></td>
+                <td><textarea name='mytest[content]' id="content"><?php echo $content;?></textarea><?php echo form::editor('content','full','mytest')?></td>
             </tr>
 
 
             <tr>
                 <th></th>
-                <td><input type="hidden" name="forward" value="?m=mytest&c=mytest&a=add"> <input
+                <td><input type="hidden" name="forward" value="?m=mytest&c=mytest&a=update"> <input
                         type="submit" name="dosubmit" id="dosubmit" class="dialog"
-                        value="添加"></td>
+                        value="修改"></td>
             </tr>
 
         </table>

@@ -13,7 +13,7 @@ class form {
 	 * @param string $height 编辑器高度
 	 * @param string $disabled_page 是否禁用分页和子标题
 	 */
-	public static function editor($textareaid = 'content', $toolbar = 'basic', $module = '', $catid = '', $color = '', $allowupload = 0, $allowbrowser = 1,$alowuploadexts = '',$height = 200,$disabled_page = 0, $allowuploadnum = '10') {
+	public static function editor($textareaid = 'content', $toolbar = 'basic', $module = '', $catid = '', $color = '', $allowupload = 0, $allowbrowser = 1,$alowuploadexts = '',$height = 180,$disabled_page = 0, $allowuploadnum = '10') {
 		$str ='';
 		if(!defined('EDITOR_INIT')) {
 			$str = '<script type="text/javascript" src="'.JS_PATH.'ckeditor/ckeditor.js"></script>';

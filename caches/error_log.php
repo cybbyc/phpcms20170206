@@ -515,3 +515,4 @@
 <?php exit;?>03-27 16:33:11 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
 <?php exit;?>03-27 16:50:11 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
 <?php exit;?>03-27 16:52:08 | 2 | Invalid argument supplied for foreach() | phpcms\modules\mytest\templates\mytest_add.tpl.php | 27
+<?php exit;?>03-28 14:42:46 | 2 | Missing argument 1 for form::images(), called in D:\wwwroot\phpcms20170206\phpcms\modules\mytest\templates\mytest_add.tpl.php on line 35 and defined | phpcms\libs\classes\form.class.php | 101

@@ -27,7 +27,7 @@ include $this->admin_tpl('header', 'admin');
 		<tr>
 			<th width="35" align="center"><input type="checkbox" value="" id="check_box" onclick="selectall('linkid[]');"></th>
 			<th width="35" align="center"><?php echo L('listorder')?></th>
-			<th><?php echo L('link_name')?></th>
+			<th align="center" width="12%"><?php echo L('link_name')?></th>
 			<th width="12%" align="center"><?php echo L('logo')?></th>
 			<th width="10%" align="center"><?php echo L('typeid')?></th>
 			<th width='10%' align="center"><?php echo L('link_type')?></th>
@@ -43,7 +43,7 @@ if(is_array($infos)){
 	<tr>
 		<td align="center" width="35"><input type="checkbox" name="linkid[]" value="<?php echo $info['linkid']?>"></td>
 		<td align="center" width="35"><input name='listorders[<?php echo $info['linkid']?>]' type='text' size='3' value='<?php echo $info['listorder']?>' class="input-text-c"></td>
-		<td><a href="<?php echo $info['url'];?>" title="<?php echo L('go_website')?>" target="_blank"><?php echo new_html_special_chars($info['name'])?></a> </td>
+		<td  align="center" width="12%"><a href="<?php echo $info['url'];?>" title="<?php echo L('go_website')?>" target="_blank"><?php echo new_html_special_chars($info['name'])?></a> </td>
 		<td align="center" width="12%"><?php if($info['linktype']==1){?><?php if($info['passed']=='1'){?><img src="<?php echo $info['logo'];?>" width=83 height=31><?php } else echo $info['logo'];}?></td>
 		<td align="center" width="10%"><?php echo $type_arr[$info['typeid']];?></td>
 		<td align="center" width="10%"><?php if($info['linktype']==0){echo L('word_link');}else{echo L('logo_link');}?></td>
